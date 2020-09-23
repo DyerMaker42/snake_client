@@ -17,6 +17,10 @@ const handleUserInput = function(data){
   } else if (data === 'd'){
     console.log("right")
     connection.write("Move: right");
+  } else if (data === 'y'){
+    connection.write("Say: No Fair!")
+  } else if (data === 'm'){
+    connection.writet("Say: Mine!")
   }
   //stdin.write(data);
 }
