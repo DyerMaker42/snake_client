@@ -7,7 +7,7 @@ const handleUserInput = function(data){
   }
   if(data === 'w'){
     console.log("up")
-    //stdin.write("Move: up")
+    connection.write("Move: up");
   } else if (data === 'a'){
     console.log('left')
   } else if(data === 's'){
@@ -17,7 +17,8 @@ const handleUserInput = function(data){
   }
   //stdin.write(data);
 }
-const setupInput = function() {
+const setupInput = function(conn) {
+  connection = conn;
   const stdin = process.stdin;
   stdin.setRawMode(true);
   stdin.setEncoding('utf8');
@@ -28,3 +29,4 @@ const setupInput = function() {
 }
 
 module.exports = setupInput;
+//module.exports = connection;
