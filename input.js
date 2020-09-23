@@ -20,7 +20,9 @@ const handleUserInput = function(data){
   } else if (data === 'y'){
     connection.write("Say: No Fair!")
   } else if (data === 'm'){
-    connection.writet("Say: Mine!")
+    connection.write("Say: Mine!")
+  } else if(data === 'g'){
+    connection.write("Say: I'm Old Gregg")
   }
   //stdin.write(data);
 }
