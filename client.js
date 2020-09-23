@@ -23,7 +23,7 @@ const connect = function () {
   //move snake up on connect
   conn.on('connect', () => {
     //moves snake up
-    conn.write('Move: up')
+    //conn.write('Move: up')
     // for loop that moves snek up and left
     for (let time = 0; time < 90; time++) {
       if (time % 2 === 0) {
