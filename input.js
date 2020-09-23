@@ -10,10 +10,13 @@ const handleUserInput = function(data){
     connection.write("Move: up");
   } else if (data === 'a'){
     console.log('left')
+    connection.write("Move: left");
   } else if(data === 's'){
     console.log('down')
+    connection.write("Move: down");
   } else if (data === 'd'){
     console.log("right")
+    connection.write("Move: right");
   }
   //stdin.write(data);
 }
