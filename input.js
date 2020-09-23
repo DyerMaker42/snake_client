@@ -1,5 +1,6 @@
 const { stdin } = require("process");
-
+//stores active TCP connection object
+let connection;
 const handleUserInput = function(data){
   if(data === '\u0003'){
     process.exit();
