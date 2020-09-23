@@ -1,4 +1,6 @@
 const  connect = require('./client');
+const setupInput = require('./input');
+
 
 //setup user interface
 
@@ -6,5 +8,6 @@ const  connect = require('./client');
 
 console.log('Connecting ...');
 connect();
+
 setupInput();
 
