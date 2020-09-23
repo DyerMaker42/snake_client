@@ -25,17 +25,17 @@ const connect = function () {
     //moves snake up
     //conn.write('Move: up')
     // for loop that moves snek up and left
-    for (let time = 0; time < 90; time++) {
-      if (time % 2 === 0) {
-        setTimeout(() => {
-          conn.write("Move: left")
-        }, time*1000)
-      } else {
-        setTimeout(() => {
-          conn.write("Move: up")
-        }, time*500)
-      }
-    }
+    // for (let time = 0; time < 90; time++) {
+    //   if (time % 2 === 0) {
+    //     setTimeout(() => {
+    //       conn.write("Move: left")
+    //     }, time*1000)
+    //   } else {
+    //     setTimeout(() => {
+    //       conn.write("Move: up")
+    //     }, time*500)
+    //   }
+    // }
   });
   return conn;
 }
