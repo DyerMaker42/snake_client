@@ -18,7 +18,7 @@ const connect = function () {
   //what to do when it connects
   conn.on('connect', () => {
     console.log("Successfully connected to game server");
-    conn.write('Name:DAD');
+    conn.write("Name: DAD");
   })
   //move snake up on connect
   conn.on('connect', () => {
